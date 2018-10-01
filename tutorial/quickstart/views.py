@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from tutorial.quickstart.serializers import UserSerializer, GroupSerializer
-from models import Restaurant
+from tutorial.quickstart.serializers import UserSerializer, GroupSerializer, RestaurantSerializer
+from .models import Restaurant
 
 class UserViewSet(viewsets.ModelViewSet):
     """

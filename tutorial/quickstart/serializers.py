@@ -19,6 +19,6 @@ class RestaurantSerializer(serializers.HyperlinkedModelSerializer):
     images = serializers.ImageField(use_url=True)
     class Meta:
         model = Restaurant
-        fields = ('id_no', 'subway_line', 'station', 'category',
+        fields = ('subway_line', 'station', 'category',
         'name', 'address', 'phone', 'workingtime', 'likes',
         'explanation', 'images')
