@@ -20,5 +20,5 @@ class RestaurantSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Restaurant
         fields = ('subway_line', 'station', 'category',
-        'name', 'address', 'phone', 'workingtime', 'likes',
+        'name', 'address', 'phone', 'workingtime', 'views', 'reviews', 'likes',
         'explanation', 'images')
