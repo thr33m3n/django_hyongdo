@@ -12,6 +12,8 @@ class Restaurant(models.Model):
     address = models.CharField(max_length=40)
     phone = models.CharField(max_length=30)
     workingtime = models.CharField(max_length=30)
+    views = models.IntegerField()
+    reviews = models.IntegerField()
     likes = models.IntegerField()
     explanation = models.CharField(max_length=200)
     images = models.ImageField()
